@@ -1,4 +1,4 @@
-# redux-confirm [![npm version](https://badge.fury.io/js/%40jeemyeong%2Fdataclass.svg)](https://badge.fury.io/js/%40jeemyeong%2Fdataclass)
+# dataclass [![npm version](https://badge.fury.io/js/%40jeemyeong%2Fdataclass.svg)](https://badge.fury.io/js/%40jeemyeong%2Fdataclass)
 
 `dataclass` is like a data class from kotlin
 
