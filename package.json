@@ -8,7 +8,15 @@
     "prepublish": "tsc"
   },
   "author": "@jeemyeong",
-  "license": "ISC",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeemyeong/dataclass"
+  },
+  "bugs": {
+    "url": "https://github.com/jeemyeong/dataclass/issues"
+  },
+  "homepage": "https://github.com/jeemyeong/dataclass",
   "devDependencies": {
     "typescript": "^3.6.2"
   }
