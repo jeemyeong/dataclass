@@ -12,6 +12,7 @@
 $ npm i @jeemyeong/dataclass
 ```
 
+## Usage
 ```typescript
 class Person extends Dataclass<Person> {
   name!: string;
