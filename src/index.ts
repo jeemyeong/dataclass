@@ -26,8 +26,10 @@ type AsOptional<T> = {
   [P in keyof T]?: T[P];
 }
 
+export type Initializer<T> = Merge<ExcludeMethods<WritablePart<T>>, ExcludeNullable<WritablePart<T>>> & AsOptional<PickNullable<WritablePart<T>>>;
+
 export abstract class Dataclass<T> {
-  public constructor(initializer: Merge<ExcludeMethods<WritablePart<T>>, ExcludeNullable<WritablePart<T>>> & AsOptional<PickNullable<WritablePart<T>>>) {
+  public constructor(initializer: Initializer<T>) {
     Object.assign(this, initializer);
   }
 }

@@ -14,21 +14,26 @@ $ npm i @jeemyeong/dataclass
 
 ## Usage
 ```typescript
-class Person extends Dataclass<Person> {
+class Person {
   name!: string;
-  age!: number | null;
+  language: string | null;
+  public constructor(initializer: Initializer<Person>) {
+    this.language = null;
+    Object.assign(this, initializer);
+  }
 }
 
-new Person({
+const p1 = new Person({
   name: "Leo"
 }); // OK
 
-new Person({
+const p2 = new Person({
   name: "Leo",
-  age: 30
+  language: "Korean",
 }); // OK
 
-new Person({
+const p3 = new Person({
+  name: "Leo",
   age: 30 // error
 });
 ```
