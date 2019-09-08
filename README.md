@@ -16,9 +16,8 @@ $ npm i @jeemyeong/dataclass
 ```typescript
 class Person {
   name!: string;
-  language: string | null;
+  language: string | null = null;
   public constructor(initializer: Initializer<Person>) {
-    this.language = null;
     Object.assign(this, initializer);
   }
 }
